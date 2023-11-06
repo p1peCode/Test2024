@@ -6,8 +6,10 @@ public class CheckYear {
         Scanner scanner = new Scanner(System.in);
         int startYear = scanner.nextInt();
 
-        if (startYear < 2002 || startYear > 2021)
+        if (startYear < 2002 || startYear > 2021) {
             throw new IllegalArgumentException("Год начала жизни должен быть от 2002 до 2021");
+
+        }
         return startYear;
     }
 }
